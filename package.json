@@ -24,11 +24,11 @@
     "webpack-dev-server": "^3.1.14",
     "webpack-livereload-plugin": "^2.2.0"
   },
-  "heroku-run-build-script": true,
   "scripts": {
     "build": "webpack --mode production",
     "open": "webpack-dev-server --mode development --open",
-    "start": "webpack-dev-server --mode development"
+    "start": "node src/index.js",
+    "local": "webpack-dev-server --mode development"
   },
   "private": true
 }
