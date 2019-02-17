@@ -26,9 +26,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "open": "webpack-dev-server --mode development --open",
-    "start": "node dist/main.js",
-    "local": "webpack-dev-server --mode development"
+    "open": "webpack-dev-server --mode development --open"
   },
   "private": true
 }
