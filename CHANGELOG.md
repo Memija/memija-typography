@@ -13,3 +13,7 @@ Dependencies have been updated.
 Dependencies have been updated.
 Dependencies import has been changed.
 Release pipeline has been changed.
+
+## Version 1.2.3
+
+Dependencies have been updated.
