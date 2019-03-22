@@ -17,3 +17,7 @@ Release pipeline has been changed.
 ## Version 1.2.3
 
 Dependencies have been updated.
+
+## Version 1.2.4
+
+Dependencies have been updated.
