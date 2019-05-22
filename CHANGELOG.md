@@ -25,3 +25,7 @@ Dependencies have been updated.
 ## Version 1.2.5
 
 Dependencies have been updated.
+
+## Version 1.2.6
+
+Dependencies have been updated.
