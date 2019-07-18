@@ -29,3 +29,7 @@ Dependencies have been updated.
 ## Version 1.2.6
 
 Dependencies have been updated.
+
+## Version 1.2.7
+
+Dependencies have been updated.
