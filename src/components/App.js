@@ -1,5 +1,6 @@
 import React from 'react';
-import { Footer, Header,
+import { DefaultValues,
+         Footer, Header,
          Color, Direction, FontSize, LetterSpacing, LineHeight, TextAlign, TextDecoration, TextIndent, TextOverflow, TextShadow, TextTransform, WhiteSpace, WordSpacing,
          Input,
          CSSOutput, ViewOutput } from './index';
@@ -9,20 +10,20 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: "#000000",
-            direction: "ltr",
-            fontSize: "12px",
-            letterSpacing: "0",
-            lineHeight: "normal",
-            textAlign: "left",
-            textDecoration: "none",
-            textIndent: "0",
-            textOverflow: "initial",
-            textShadow: "0px 0px 0px #ffffff",
-            textTransform: "none",
-            value: "Start typing ...",
-            whiteSpace: "normal",
-            wordSpacing: "0"
+            color: DefaultValues.Color,
+            direction: DefaultValues.Direction,
+            fontSize: DefaultValues.FontSize,
+            letterSpacing: DefaultValues.LetterSpacing,
+            lineHeight: DefaultValues.LineHeight,
+            textAlign: DefaultValues.TextAlign,
+            textDecoration: DefaultValues.TextDecoration,
+            textIndent: DefaultValues.TextIndent,
+            textOverflow: DefaultValues.TextOverflow,
+            textShadow: DefaultValues.TextShadow,
+            textTransform: DefaultValues.TextTransform,
+            value: DefaultValues.value,
+            whiteSpace: DefaultValues.WhiteSpace,
+            wordSpacing: DefaultValues.WordSpacing
         }
     }
     /**

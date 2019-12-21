@@ -8,7 +8,7 @@ class Footer extends React.Component {
         return (
             <div className = "common footer">
                 <div className = "row">
-                    <div className = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div className = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <i className = "fa fa-home fa-lg"></i>
                         &nbsp;
                         <a href = { Contact.Home }
@@ -16,7 +16,7 @@ class Footer extends React.Component {
                             { Brand.BrandName }
                         </a>
                     </div>
-                    <div className = "col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div className = "col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <i className = "fa fa-inbox fa-lg"></i>
                         &nbsp;
                         <a href = { "mailto:" + Contact.Email + "?Subject=" + Brand.BrandName + "%20" + Brand.ApplicationName}>

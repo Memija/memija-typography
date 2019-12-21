@@ -33,3 +33,10 @@ Dependencies have been updated.
 ## Version 1.2.7
 
 Dependencies have been updated.
+
+## Version 1.3.3
+
+Footer JS file has been changed. Design has been adapted.
+Enumerations folder has been renamed to configurations in order to better reflect its content.
+DefaultValues JS file has been added.
+Dependencies have been updated.

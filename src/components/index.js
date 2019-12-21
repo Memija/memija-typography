@@ -1,7 +1,8 @@
-export { Brand } from "../enumerations/Brand.js"
-export { Configuration } from "../enumerations/Configuration";
-export { Contact } from "../enumerations/Contact.js";
-export { DateUtility } from "../util/DateUtility.js";
+export { Brand } from "../configurations/Brand.js"
+export { Configuration } from "../configurations/Configuration.js";
+export { Contact } from "../configurations/Contact.js";
+export { DefaultValues } from "../configurations/DefaultValues.js";
+export { DateUtility } from "../util/DateUtility";
 export { default as Footer } from "./common/footer/Footer.js";
 export { default as Header } from "./common/header/Header.js";
 export { default as Color } from "./edit/color/Color.js";
