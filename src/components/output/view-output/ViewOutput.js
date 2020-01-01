@@ -25,6 +25,6 @@ class ViewOutput extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default ViewOutput;

@@ -30,6 +30,6 @@ class LineHeight extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default LineHeight;

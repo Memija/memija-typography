@@ -27,6 +27,6 @@ class Color extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default Color;

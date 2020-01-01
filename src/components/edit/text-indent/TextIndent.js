@@ -30,6 +30,6 @@ class TextIndent extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default TextIndent;

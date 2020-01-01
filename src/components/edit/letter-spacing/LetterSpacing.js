@@ -30,6 +30,6 @@ class LetterSpacing extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default LetterSpacing;

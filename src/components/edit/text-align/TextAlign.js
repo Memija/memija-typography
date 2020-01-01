@@ -76,6 +76,6 @@ class TextAlign extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default TextAlign;

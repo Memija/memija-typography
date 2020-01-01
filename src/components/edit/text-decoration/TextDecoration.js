@@ -32,6 +32,6 @@ class TextDecoration extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default TextDecoration;

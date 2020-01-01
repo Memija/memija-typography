@@ -32,6 +32,6 @@ class TextTransform extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default TextTransform;

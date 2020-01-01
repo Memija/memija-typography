@@ -44,6 +44,6 @@ class FontSize extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default FontSize;

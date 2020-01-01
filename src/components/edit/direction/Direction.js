@@ -30,6 +30,6 @@ class Direction extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default Direction;

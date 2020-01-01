@@ -67,6 +67,6 @@ class TextShadow extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default TextShadow;

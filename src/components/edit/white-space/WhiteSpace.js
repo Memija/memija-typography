@@ -33,6 +33,6 @@ class WhiteSpace extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default WhiteSpace;

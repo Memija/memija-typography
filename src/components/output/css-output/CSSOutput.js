@@ -58,6 +58,6 @@ class CSSOutput extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default CSSOutput;

@@ -31,6 +31,6 @@ class TextOverflow extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default TextOverflow;

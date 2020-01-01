@@ -30,6 +30,6 @@ class WordSpacing extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default WordSpacing;
