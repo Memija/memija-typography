@@ -11,14 +11,16 @@ app.use(hsts({
     includeSubDomains: true,
     preload: true
 }));
-app.get('*', function (req, res) {
-    if (!req.secure) {
-        res.redirect('https://' + req.headers.host + req.url);
+
+app.get('*', function (request, response) {
+    if (!request.secure) {
+        response.redirect('https://' + request.headers.host + request.url);
     }
 });
-app.get('*.js', function (req, res, next) {
-    req.url = req.url + '.gz';
-    res.set('Content-Encoding', 'gzip');
+app.get('*.js', function (request, response, next) {
+    request.url = request.url + '.gz';
+    response.set('Content-Encoding', 'gzip');
     next();
 });
+
 app.listen(process.env.PORT || 8080);
