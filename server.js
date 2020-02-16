@@ -11,8 +11,10 @@ app.use(hsts({
     includeSubDomains: true,
     preload: true
 }));
-http.get('*', function (req, res) {  
-    res.redirect('https://' + req.headers.host + req.url);
+app.get('*', function (req, res) {
+    if (!req.secure) {
+        res.redirect('https://' + req.headers.host + req.url);
+    }
 });
 app.get('*.js', function (req, res, next) {
     req.url = req.url + '.gz';
