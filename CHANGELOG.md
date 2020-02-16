@@ -44,3 +44,7 @@ Dependencies have been updated.
 ## Version 1.3.4
 
 Development dependencies have been updated.
+
+## Version 1.3.5
+
+Development dependencies have been updated.
