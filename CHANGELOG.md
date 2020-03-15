@@ -48,3 +48,8 @@ Development dependencies have been updated.
 ## Version 1.3.5
 
 Development dependencies have been updated.
+
+## Version 1.3.7
+
+Dependencies have been updated.
+Development dependencies have been updated.
