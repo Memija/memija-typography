@@ -1,7 +1,7 @@
 const FILENAME = "style";
 const FILETYPE = ".css";
 const LOGO = "src/resources/logo/memija.png"
-const VERSION = "1.3.7";
+const VERSION = "1.3.9";
 
 export const Configuration = {
     "File" : {
