@@ -81,3 +81,7 @@ Development dependencies have been updated.
 ## Version 1.3.18
 
 Development dependencies have been updated.
+
+## Version 1.3.19
+
+Development dependencies have been updated.
