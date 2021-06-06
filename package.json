@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^5.0.0",
+    "bootstrap": "^5.0.1",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
@@ -11,18 +11,18 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.0",
-    "@babel/preset-env": "^7.14.1",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
     "babel-minify-webpack-plugin": "^0.3.1",
-    "css-loader": "^5.2.4",
+    "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",
-    "less-loader": "^8.1.1",
+    "less-loader": "^9.0.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.36.2",
+    "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-livereload-plugin": "^3.0.1"
