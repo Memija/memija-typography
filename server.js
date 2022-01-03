@@ -17,9 +17,7 @@ app.use(hsts({
 
 app.get('*', function (request, response) {
     if (!request.secure) {
-        if(request.header.host.startsWith('memija')) {
-            response.redirect('https://' + request.headers.host);  
-        }
+        response.redirect('https://https://memija-typography.herokuapp.com/');
     }
 });
 app.get('*.js', function (request, response, next) {
