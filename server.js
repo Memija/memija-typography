@@ -17,8 +17,8 @@ app.use(hsts({
 
 app.get('*', function (request, response) {
     if (!request.secure) {
-        if(request.header.host.startsWith('memija') && request.url.startsWith('/')) {
-            response.redirect('https://' + request.headers.host + request.url);  
+        if(request.header.host.startsWith('memija')) {
+            response.redirect('https://' + request.headers.host);  
         }
     }
 });
