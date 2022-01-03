@@ -4,6 +4,9 @@ const hsts = require('hsts');
 
 var app = express();
 
+//Disclosing fingerprints from web application technologies is security-sensitive
+app.disable("x-powered-by");
+
 app.use(compression());
 app.use(express.static(__dirname + '/dist'));
 app.use(hsts({
@@ -14,7 +17,8 @@ app.use(hsts({
 
 app.get('*', function (request, response) {
     if (!request.secure) {
-        response.redirect('https://' + request.headers.host + request.url);
+        let url = 'https://' + request.headers.host + request.url;
+        response.redirect(url);
     }
 });
 app.get('*.js', function (request, response, next) {

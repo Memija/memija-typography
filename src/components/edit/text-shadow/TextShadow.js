@@ -1,6 +1,6 @@
 import React from 'react';
-import { EditStyle } from "../EditStyle.less";
-import { TextShadowStyle } from "./TextShadowStyle.less";
+import "../EditStyle.less";
+import "./TextShadowStyle.less";
 
 class TextShadow extends React.Component {
     handleChange(e) {

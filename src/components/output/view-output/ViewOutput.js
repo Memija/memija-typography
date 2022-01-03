@@ -1,6 +1,6 @@
 import React from 'react';
-import { OutputStyle } from "../OutputStyle.less";
-import { ViewOutputStyle } from "./ViewOutputStyle.less";
+import "../OutputStyle.less";
+import "./ViewOutputStyle.less";
 
 class ViewOutput extends React.Component {
     render() {

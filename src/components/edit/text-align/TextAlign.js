@@ -1,5 +1,5 @@
 import React from 'react';
-import { EditStyle } from "../EditStyle.less";
+import "../EditStyle.less";
 
 class TextAlign extends React.Component {
     handleChangeLeft(e) {

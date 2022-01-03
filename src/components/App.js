@@ -4,7 +4,7 @@ import { DefaultValues,
          Color, Direction, FontSize, LetterSpacing, LineHeight, TextAlign, TextDecoration, TextIndent, TextOverflow, TextShadow, TextTransform, WhiteSpace, WordSpacing,
          Input,
          CSSOutput, ViewOutput } from './index';
-import { AppStyle } from './AppStyle.less';
+import "./AppStyle.less";
 
 class App extends React.Component {
     constructor(props) {

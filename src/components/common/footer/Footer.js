@@ -1,7 +1,7 @@
 import React from 'react';
 import { Brand, Configuration, Contact, DateUtility } from "../../index";
-import { CommonStyle } from "../CommonStyle.less";
-import { FooterStyle } from "./FooterStyle.less";
+import "../CommonStyle.less";
+import "./FooterStyle.less";
 
 class Footer extends React.Component {
     render() {

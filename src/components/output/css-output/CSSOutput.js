@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import fileDownload from 'js-file-download';
 import { Configuration } from "../../index";
-import { OutputStyle } from "../OutputStyle.less";
-import { CSSOutputStyle } from "./CSSOutputStyle.less";
+import "../OutputStyle.less";
+import "./CSSOutputStyle.less";
 
 class CSSOutput extends React.Component {
     /**

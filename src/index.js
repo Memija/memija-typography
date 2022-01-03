@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import brandLogo from './resources/logo/memija.png';
-import backgroundImage from './resources/images/background.jpg';
-import cssDependencies from './css/Dependencies.less';
+import './resources/logo/memija.png';
+import './resources/images/background.jpg';
+import './css/Dependencies.less';
 import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById('app'));

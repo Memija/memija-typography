@@ -1,5 +1,5 @@
 import React from 'react';
-import { EditStyle } from "../EditStyle.less";
+import "../EditStyle.less";
 
 class FontSize extends React.Component {
     handleChange(e) {

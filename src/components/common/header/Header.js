@@ -1,7 +1,7 @@
 import React from 'react';
 import { Brand, Configuration } from "../../index";
-import { CommonStyle } from "../CommonStyle.less";
-import { HeaderStyle } from "./HeaderStyle.less";
+import "../CommonStyle.less";
+import "./HeaderStyle.less";
 
 class Header extends React.Component {
     render() {

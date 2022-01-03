@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputStyle } from "./InputStyle.less";
+import "./InputStyle.less";
 
 class Input extends React.Component {
     handleChange(e) {
