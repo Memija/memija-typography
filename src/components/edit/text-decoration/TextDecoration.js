@@ -1,5 +1,5 @@
 import React from 'react';
-import "../EditStyle.less";
+import '../EditStyle.less';
 
 class TextDecoration extends React.Component {
     handleChange(e) {
@@ -8,25 +8,25 @@ class TextDecoration extends React.Component {
     }
     render() {
         return (
-            <div className = "row edit">
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div className = "btn btn-default"
-                         data-placement = "top"
-                         data-toggle = "tooltip"
+            <div className = 'row edit'>
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                    <div className = 'btn btn-default'
+                         data-placement = 'top'
+                         data-toggle = 'tooltip'
                          disabled
-                         title = "Set CSS text-decoration property value.">
-                        <i className = "fa fa-strikethrough fa-lg"></i>
+                         title = 'Set CSS text-decoration property value.'>
+                        <i className = 'fa fa-strikethrough fa-lg'></i>
                     </div>
                     &nbsp;
-                    <label htmlFor = "text-decoration">Text decoration</label>
+                    <label htmlFor = 'text-decoration'>Text decoration</label>
                 </div>
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue = "none"
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                    <select defaultValue = 'none'
                             onChange = { this.handleChange.bind(this) }>
-                        <option value = "none">None</option>
-                        <option value = "underline">Underline</option>
-                        <option value = "overline">Overline</option>
-                        <option value = "line-through">Line through</option>
+                        <option value = 'none'>None</option>
+                        <option value = 'underline'>Underline</option>
+                        <option value = 'overline'>Overline</option>
+                        <option value = 'line-through'>Line through</option>
                     </select>
                 </div>
             </div>

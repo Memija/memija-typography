@@ -1,6 +1,6 @@
 import React from 'react';
-import "../OutputStyle.less";
-import "./ViewOutputStyle.less";
+import '../OutputStyle.less';
+import './ViewOutputStyle.less';
 
 class ViewOutput extends React.Component {
     render() {
@@ -20,7 +20,7 @@ class ViewOutput extends React.Component {
             wordSpacing:    this.props.wordSpacing
         };
         return (
-            <div className = "general-output view-output">
+            <div className = 'general-output view-output'>
                 <div style = { style } >{ this.props.value }</div>
             </div>
         );

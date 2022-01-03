@@ -1,5 +1,5 @@
 import React from 'react';
-import "../EditStyle.less";
+import '../EditStyle.less';
 
 class Direction extends React.Component {
     handleChange(e) {
@@ -8,23 +8,23 @@ class Direction extends React.Component {
     }
     render() {
         return (
-            <div className = "row edit">
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div className = "btn btn-default"
-                         data-placement = "top"
-                         data-toggle = "tooltip"
+            <div className = 'row edit'>
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                    <div className = 'btn btn-default'
+                         data-placement = 'top'
+                         data-toggle = 'tooltip'
                          disabled
-                         title = "Set CSS text direction property value.">
-                        <i className = "fa fa-map-signs fa-lg"></i>
+                         title = 'Set CSS text direction property value.'>
+                        <i className = 'fa fa-map-signs fa-lg'></i>
                     </div>
                     &nbsp;
-                    <label htmlFor = "direction">Direction</label>
+                    <label htmlFor = 'direction'>Direction</label>
                 </div>
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue = "ltr"
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                    <select defaultValue = 'ltr'
                             onChange = { this.handleChange.bind(this) }>
-                        <option value = "ltr">Left to right</option>
-                        <option value = "rtl">Right to left</option>
+                        <option value = 'ltr'>Left to right</option>
+                        <option value = 'rtl'>Right to left</option>
                     </select>
                 </div>
             </div>

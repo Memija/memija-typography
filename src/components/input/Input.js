@@ -1,5 +1,5 @@
 import React from 'react';
-import "./InputStyle.less";
+import './InputStyle.less';
 
 class Input extends React.Component {
     handleChange(e) {
@@ -8,9 +8,9 @@ class Input extends React.Component {
     }
     render() {
         return (
-            <div className = "input">
+            <div className = 'input'>
                 <textarea onChange = { this.handleChange.bind(this) }
-                          placeholder = "Start typing ...">
+                          placeholder = 'Start typing ...'>
                 </textarea>
             </div>
         );

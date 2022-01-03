@@ -1,7 +1,7 @@
-const EMAIL = "anelmemija@gmail.com";
-const HOME = "https://memija.herokuapp.com";
+const EMAIL = 'anelmemija@gmail.com';
+const HOME = 'https://memija.herokuapp.com';
 
 export const Contact = {
-    "Email": EMAIL,
-    "Home": HOME
+    'Email': EMAIL,
+    'Home': HOME
 };

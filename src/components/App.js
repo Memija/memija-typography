@@ -4,7 +4,7 @@ import { DefaultValues,
          Color, Direction, FontSize, LetterSpacing, LineHeight, TextAlign, TextDecoration, TextIndent, TextOverflow, TextShadow, TextTransform, WhiteSpace, WordSpacing,
          Input,
          CSSOutput, ViewOutput } from './index';
-import "./AppStyle.less";
+import './AppStyle.less';
 
 class App extends React.Component {
     constructor(props) {
@@ -153,14 +153,14 @@ class App extends React.Component {
         });
     }
     render() {
-        let letterSpacingWithSizeUnit = this.state.letterSpacing + "px";
-        let textIndentWithSizeUnit = this.state.textIndent + "px";
+        let letterSpacingWithSizeUnit = this.state.letterSpacing + 'px';
+        let textIndentWithSizeUnit = this.state.textIndent + 'px';
         let wordSpacingWithSizeUnit = this.state.wordSpacing + 'px';
         return (
             <div>
                 <Header />
-                <div className = "row app">
-                    <div className = "col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                <div className = 'row app'>
+                    <div className = 'col-xs-12 col-sm-12 col-md-6 col-lg-5'>
                         <Input onChange = { this.changeValue.bind(this) } />
                         <br />
                         <Color onChange={this.changeColor.bind(this)}/>
@@ -189,7 +189,7 @@ class App extends React.Component {
                         <hr />
                         <WordSpacing onChange = { this.changeWordSpacing.bind(this) } />
                     </div>
-                    <div className = "col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                    <div className = 'col-xs-12 col-sm-12 col-md-6 col-lg-7'>
                         <ViewOutput color = { this.state.color }
                                     direction = { this.state.direction }
                                     fontSize = { this.state.fontSize }

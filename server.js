@@ -1,11 +1,11 @@
-const compression = require("compression");
-const express = require("express");
+const compression = require('compression');
+const express = require('express');
 const hsts = require('hsts');
 
 var app = express();
 
 //Disclosing fingerprints from web application technologies is security-sensitive
-app.disable("x-powered-by");
+app.disable('x-powered-by');
 
 app.use(compression());
 app.use(express.static(__dirname + '/dist'));

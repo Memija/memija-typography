@@ -1,5 +1,5 @@
 import React from 'react';
-import "../EditStyle.less";
+import '../EditStyle.less';
 
 class Color extends React.Component {
     handleChange(e) {
@@ -8,21 +8,21 @@ class Color extends React.Component {
     }
     render() {
         return (
-            <div className = "row edit">
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div className = "btn btn-default"
-                         data-placement = "top"
-                         data-toggle = "tooltip"
+            <div className = 'row edit'>
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                    <div className = 'btn btn-default'
+                         data-placement = 'top'
+                         data-toggle = 'tooltip'
                          disabled
-                         title = "Set CSS color property value.">
-                        <i className = "fa fa-paint-brush fa-lg"></i>
+                         title = 'Set CSS color property value.'>
+                        <i className = 'fa fa-paint-brush fa-lg'></i>
                     </div>
                     &nbsp;
-                    <label htmlFor = "color">Color</label>
+                    <label htmlFor = 'color'>Color</label>
                 </div>
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
                     <input onChange = { this.handleChange.bind(this) }
-                           type = "color" />
+                           type = 'color' />
                 </div>
             </div>
         );

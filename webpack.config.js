@@ -1,7 +1,7 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 var htmlWebPackPluginInstance = new HtmlWebPackPlugin({
-    filename: "./index.html",
+    filename: './index.html',
     minify: {
         collapseWhitespace: true,
         html5: true,
@@ -10,7 +10,7 @@ var htmlWebPackPluginInstance = new HtmlWebPackPlugin({
         removeComments: true,
         removeEmptyAttributes: true
     },
-    template: "./src/index.html"
+    template: './src/index.html'
 });
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
                 exclude: /node_modules/,
                 test: /\.js$/,
                 use: {
-                    loader: "babel-loader"
+                    loader: 'babel-loader'
                 }
             },
             {
@@ -28,13 +28,13 @@ module.exports = {
                 test: /\.less$/,
                 use: [
                     {
-                        loader: "style-loader"
+                        loader: 'style-loader'
                     },
                     {
-                        loader: "css-loader"
+                        loader: 'css-loader'
                     },
                     {
-                        loader: "less-loader"
+                        loader: 'less-loader'
                     }
                 ]
             },

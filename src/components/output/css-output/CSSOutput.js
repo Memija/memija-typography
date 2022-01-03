@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import fileDownload from 'js-file-download';
-import { Configuration } from "../../index";
-import "../OutputStyle.less";
-import "./CSSOutputStyle.less";
+import { Configuration } from '../../index';
+import '../OutputStyle.less';
+import './CSSOutputStyle.less';
 
 class CSSOutput extends React.Component {
     /**
@@ -12,14 +12,14 @@ class CSSOutput extends React.Component {
     saveToFile() {
         let fileNameAndType = Configuration.File.FileName + Configuration.File.FileType;
         let input = ReactDOM.findDOMNode(this.refs.data).textContent;
-        let formatedData = input.replace(/;/g, ";\r\n").replace("{", "{\r\n").replace("}", "}\r\n");
+        let formatedData = input.replace(/;/g, ';\r\n').replace('{', '{\r\n').replace('}', '}\r\n');
         fileDownload(formatedData, fileNameAndType);
     }
     render() {
         return (
-            <div className = "css-output">
-                <div className = "general-output css-output-display"
-                     ref = "data">
+            <div className = 'css-output'>
+                <div className = 'general-output css-output-display'
+                     ref = 'data'>
                     div &#123;
                     <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;color: { this.props.color };
@@ -51,7 +51,7 @@ class CSSOutput extends React.Component {
                     &#125;
                 </div>
                 <br />
-                <button className = "btn btn-default"
+                <button className = 'btn btn-default'
                         onClick = { this.saveToFile.bind(this) } >
                     Save CSS data
                 </button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../EditStyle.less";
+import '../EditStyle.less';
 
 class LineHeight extends React.Component {
     handleChange(e) {
@@ -8,23 +8,23 @@ class LineHeight extends React.Component {
     }
     render() {
         return (
-            <div className = "row edit">
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div className = "btn btn-default"
-                         data-placement = "top"
-                         data-toggle = "tooltip"
+            <div className = 'row edit'>
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                    <div className = 'btn btn-default'
+                         data-placement = 'top'
+                         data-toggle = 'tooltip'
                          disabled
-                         title = "Set CSS line-height property value.">
-                        <i className = "fa fa-arrows-v fa-lg"></i>
+                         title = 'Set CSS line-height property value.'>
+                        <i className = 'fa fa-arrows-v fa-lg'></i>
                     </div>
                     &nbsp;
-                    <label htmlFor = "line-height">Line height</label>
+                    <label htmlFor = 'line-height'>Line height</label>
                 </div>
-                <div className = "col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <input defaultValue = "1"
-                           max = "25"
-                           min = "-25"
-                           type = "number"
+                <div className = 'col-xs-6 col-sm-6 col-md-6 col-lg-6'>
+                    <input defaultValue = '1'
+                           max = '25'
+                           min = '-25'
+                           type = 'number'
                            onChange = { this.handleChange.bind(this) } />
                 </div>
             </div>
