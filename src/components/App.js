@@ -10,20 +10,20 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: DefaultValues.Color,
-            direction: DefaultValues.Direction,
-            fontSize: DefaultValues.FontSize,
-            letterSpacing: DefaultValues.LetterSpacing,
-            lineHeight: DefaultValues.LineHeight,
-            textAlign: DefaultValues.TextAlign,
-            textDecoration: DefaultValues.TextDecoration,
-            textIndent: DefaultValues.TextIndent,
-            textOverflow: DefaultValues.TextOverflow,
-            textShadow: DefaultValues.TextShadow,
-            textTransform: DefaultValues.TextTransform,
+            color: DefaultValues.color,
+            direction: DefaultValues.direction,
+            fontSize: DefaultValues.fontSize,
+            letterSpacing: DefaultValues.letterSpacing,
+            lineHeight: DefaultValues.lineHeight,
+            textAlign: DefaultValues.textAlign,
+            textDecoration: DefaultValues.textDecoration,
+            textIndent: DefaultValues.textIndent,
+            textOverflow: DefaultValues.textOverflow,
+            textShadow: DefaultValues.textShadow,
+            textTransform: DefaultValues.textTransform,
             value: DefaultValues.value,
-            whiteSpace: DefaultValues.WhiteSpace,
-            wordSpacing: DefaultValues.WordSpacing
+            whiteSpace: DefaultValues.whiteSpace,
+            wordSpacing: DefaultValues.wordSpacing
         }
     }
     /**
