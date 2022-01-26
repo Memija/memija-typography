@@ -133,3 +133,7 @@ Development dependencies have been updated.
 ## Version 1.3.37
 
 Sonar issues have been resolved.
+
+## Version 1.3.38
+
+Development dependencies have been updated.
