@@ -12,7 +12,6 @@ body {
 .btn-default {
     background-color: transparent;
     border-style: none;
-    color: #ffffff;
 }
 
 .btn-default:hover {
