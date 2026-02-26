@@ -1,4 +1,4 @@
-export { Brand } from '../configurations/Brand.js'
+export { Brand } from '../configurations/Brand.js';
 export { Configuration } from '../configurations/Configuration.js';
 export { Contact } from '../configurations/Contact.js';
 export { DefaultValues } from '../configurations/DefaultValues.js';

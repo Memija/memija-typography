@@ -8,10 +8,8 @@ class Input extends React.Component {
     }
     render() {
         return (
-            <div className = 'input'>
-                <textarea onChange = { this.handleChange.bind(this) }
-                          placeholder = 'Start typing ...'>
-                </textarea>
+            <div className="input">
+                <textarea onChange={this.handleChange.bind(this)} placeholder="Start typing ..."></textarea>
             </div>
         );
     }
