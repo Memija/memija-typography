@@ -1,9 +1,25 @@
 import React from 'react';
-import { DefaultValues,
-         Footer, Header,
-         Color, Direction, FontSize, LetterSpacing, LineHeight, TextAlign, TextDecoration, TextIndent, TextOverflow, TextShadow, TextTransform, WhiteSpace, WordSpacing,
-         Input,
-         CSSOutput, ViewOutput } from './index';
+import {
+    DefaultValues,
+    Footer,
+    Header,
+    Color,
+    Direction,
+    FontSize,
+    LetterSpacing,
+    LineHeight,
+    TextAlign,
+    TextDecoration,
+    TextIndent,
+    TextOverflow,
+    TextShadow,
+    TextTransform,
+    WhiteSpace,
+    WordSpacing,
+    Input,
+    CSSOutput,
+    ViewOutput
+} from './index';
 import './AppStyle.less';
 
 class App extends React.Component {
@@ -24,7 +40,7 @@ class App extends React.Component {
             value: DefaultValues.value,
             whiteSpace: DefaultValues.whiteSpace,
             wordSpacing: DefaultValues.wordSpacing
-        }
+        };
     }
     /**
      * Set input value.
@@ -159,66 +175,70 @@ class App extends React.Component {
         return (
             <div>
                 <Header />
-                <div className = 'row app'>
-                    <div className = 'col-xs-12 col-sm-12 col-md-6 col-lg-5'>
-                        <Input onChange = { this.changeValue.bind(this) } />
+                <div className="row app">
+                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                        <Input onChange={this.changeValue.bind(this)} />
                         <br />
-                        <Color onChange={this.changeColor.bind(this)}/>
+                        <Color onChange={this.changeColor.bind(this)} />
                         <hr />
-                        <Direction onChange = { this.changeDirection.bind(this) } />
+                        <Direction onChange={this.changeDirection.bind(this)} />
                         <hr />
-                        <FontSize onChange = { this.changeFontSize.bind(this) } />
+                        <FontSize onChange={this.changeFontSize.bind(this)} />
                         <hr />
-                        <LetterSpacing onChange = { this.changeLetterSpacing.bind(this) } />
+                        <LetterSpacing onChange={this.changeLetterSpacing.bind(this)} />
                         <hr />
-                        <LineHeight onChange = { this.changeLineHeight.bind(this) } />
+                        <LineHeight onChange={this.changeLineHeight.bind(this)} />
                         <hr />
-                        <TextAlign onChange = { this.changeTextAlign.bind(this) } />
+                        <TextAlign onChange={this.changeTextAlign.bind(this)} />
                         <hr />
-                        <TextDecoration onChange = { this.changeTextDecoration.bind(this) } />
+                        <TextDecoration onChange={this.changeTextDecoration.bind(this)} />
                         <hr />
-                        <TextIndent onChange = { this.changeTextIndent.bind(this) } />
+                        <TextIndent onChange={this.changeTextIndent.bind(this)} />
                         <hr />
-                        <TextOverflow onChange = { this.changeTextOverflow.bind(this)} />
+                        <TextOverflow onChange={this.changeTextOverflow.bind(this)} />
                         <hr />
-                        <TextShadow onChange = { this.changeTextShadow.bind(this) } />
+                        <TextShadow onChange={this.changeTextShadow.bind(this)} />
                         <hr />
-                        <TextTransform onChange = { this.changeTextTransform.bind(this) } />
+                        <TextTransform onChange={this.changeTextTransform.bind(this)} />
                         <hr />
-                        <WhiteSpace onChange = { this.changeWhiteSpace.bind(this) } />
+                        <WhiteSpace onChange={this.changeWhiteSpace.bind(this)} />
                         <hr />
-                        <WordSpacing onChange = { this.changeWordSpacing.bind(this) } />
+                        <WordSpacing onChange={this.changeWordSpacing.bind(this)} />
                     </div>
-                    <div className = 'col-xs-12 col-sm-12 col-md-6 col-lg-7'>
-                        <ViewOutput color = { this.state.color }
-                                    direction = { this.state.direction }
-                                    fontSize = { this.state.fontSize }
-                                    letterSpacing = { letterSpacingWithSizeUnit }
-                                    lineHeight = { this.state.lineHeight }
-                                    textAlign = { this.state.textAlign }
-                                    textDecoration = { this.state.textDecoration }
-                                    textIndent = { textIndentWithSizeUnit }
-                                    textOverflow = { this.state.textOverflow }
-                                    textShadow = { this.state.textShadow }
-                                    textTransform = { this.state.textTransform }
-                                    whiteSpace = { this.state.whiteSpace }
-                                    wordSpacing = { wordSpacingWithSizeUnit }
-                                    value = { this.state.value } />
+                    <div className="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                        <ViewOutput
+                            color={this.state.color}
+                            direction={this.state.direction}
+                            fontSize={this.state.fontSize}
+                            letterSpacing={letterSpacingWithSizeUnit}
+                            lineHeight={this.state.lineHeight}
+                            textAlign={this.state.textAlign}
+                            textDecoration={this.state.textDecoration}
+                            textIndent={textIndentWithSizeUnit}
+                            textOverflow={this.state.textOverflow}
+                            textShadow={this.state.textShadow}
+                            textTransform={this.state.textTransform}
+                            whiteSpace={this.state.whiteSpace}
+                            wordSpacing={wordSpacingWithSizeUnit}
+                            value={this.state.value}
+                        />
                         <br />
                         <br />
-                        <CSSOutput color = { this.state.color }
-                                   direction = { this.state.direction }
-                                   fontSize = { this.state.fontSize }
-                                   letterSpacing = { letterSpacingWithSizeUnit }
-                                   lineHeight = { this.state.lineHeight }
-                                   textAlign = { this.state.textAlign }
-                                   textDecoration = { this.state.textDecoration }
-                                   textIndent = { textIndentWithSizeUnit }
-                                   textOverflow = { this.state.textOverflow }
-                                   textShadow = { this.state.textShadow }
-                                   textTransform = { this.state.textTransform }
-                                   whiteSpace = { this.state.whiteSpace }
-                                   wordSpacing = { wordSpacingWithSizeUnit } />
+                        <CSSOutput
+                            color={this.state.color}
+                            direction={this.state.direction}
+                            fontSize={this.state.fontSize}
+                            letterSpacing={letterSpacingWithSizeUnit}
+                            lineHeight={this.state.lineHeight}
+                            textAlign={this.state.textAlign}
+                            textDecoration={this.state.textDecoration}
+                            textIndent={textIndentWithSizeUnit}
+                            textOverflow={this.state.textOverflow}
+                            textShadow={this.state.textShadow}
+                            textTransform={this.state.textTransform}
+                            whiteSpace={this.state.whiteSpace}
+                            wordSpacing={wordSpacingWithSizeUnit}
+                        />
                     </div>
                 </div>
                 <Footer />

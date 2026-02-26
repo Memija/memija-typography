@@ -1,29 +1,48 @@
 const compression = require('compression');
 const express = require('express');
-const hsts = require('hsts');
+const helmet = require('helmet');
+const path = require('path');
 
-var app = express();
+const app = express();
 
-//Disclosing fingerprints from web application technologies is security-sensitive
-app.disable('x-powered-by');
+// Enable trust proxy for Heroku
+app.enable('trust proxy');
 
+// Security headers
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+        "script-src": ["'self'", "'unsafe-inline'"],
+        "img-src": ["'self'", "data:", "https:"],
+      },
+    },
+  })
+);
+
+// Compression
 app.use(compression());
-app.use(express.static(__dirname + '/dist'));
-app.use(hsts({
-    maxAge: 31536000,
-    includeSubDomains: true,
-    preload: true
-}));
 
-app.get('*', function (request, response) {
-    if (!request.secure) {
-        response.redirect('https://https://memija-typography.herokuapp.com/');
-    }
-});
-app.get('*.js', function (request, response, next) {
-    request.url = request.url + '.gz';
-    response.set('Content-Encoding', 'gzip');
+// Force HTTPS redirection
+app.use((req, res, next) => {
+  if (req.secure || req.headers['x-forwarded-proto'] === 'https') {
     next();
+  } else {
+    // Only redirect if not localhost
+    if (req.headers.host && req.headers.host.includes('localhost')) {
+      next();
+    } else {
+      res.redirect('https://' + req.headers.host + req.url);
+    }
+  }
 });
 
-app.listen(process.env.PORT || 8080);
+// Serve static files
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Start server
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './resources/logo/memija.png';
-import './resources/images/background.jpg';
+import { createRoot } from 'react-dom/client';
 import './css/Dependencies.less';
 import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App />);

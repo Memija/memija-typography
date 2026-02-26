@@ -1,78 +1,74 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
-var htmlWebPackPluginInstance = new HtmlWebPackPlugin({
+const htmlWebPackPluginInstance = new HtmlWebPackPlugin({
     filename: './index.html',
+    template: './src/index.html',
     minify: {
         collapseWhitespace: true,
-        html5: true,
-        minifyCSS: true,
-        removeAttributeQuotes: true,
         removeComments: true,
-        removeEmptyAttributes: true
-    },
-    template: './src/index.html'
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+    }
 });
 
 module.exports = {
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[contenthash].js',
+        clean: true,
+        assetModuleFilename: 'assets/[hash][ext][query]'
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '.json']
+    },
     module: {
         rules: [
             {
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                test: /\.js$/,
                 use: {
                     loader: 'babel-loader'
                 }
             },
             {
-                exclude: /node_modules/,
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
                 test: /\.less$/,
+                exclude: /node_modules/,
                 use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'less-loader'
-                    }
+                    'style-loader',
+                    'css-loader',
+                    'less-loader'
                 ]
             },
             {
-                test: /\.(css|png|jpe?g|gif)(\?\S*)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]'
-                        }
-                    }
-                ]
-            },
-            {
-                test: /.(ttf|otf|eot|svg?)(\?[a-z0-9]+)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'src/resources/fonts'
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.woff2?$/i,
+                test: /\.(png|jpe?g|gif)(\?\S*)?$/,
                 type: 'asset/resource',
-                dependency: {
-                    not: [
-                        'url'
-                    ]
+                generator: {
+                     filename: '[name][ext]'
+                }
+            },
+            {
+                test: /\.(ttf|otf|eot|svg|woff2?)(\?[a-z0-9]+)?$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'resources/fonts/[name][ext]'
                 }
             }
         ]
     },
     plugins: [
         htmlWebPackPluginInstance
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true,
+        port: 3000,
+        open: true,
+        hot: true
+    }
 };
