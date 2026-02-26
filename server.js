@@ -2,6 +2,7 @@ const compression = require('compression');
 const express = require('express');
 const helmet = require('helmet');
 const path = require('path');
+const url = require('url');
 
 const app = express();
 
@@ -34,7 +35,14 @@ app.use((req, res, next) => {
       next();
     } else {
       // Use hardcoded domain to prevent Host Header Injection
-      res.redirect('https://memija-typography.herokuapp.com' + req.url);
+      // Validate req.url to prevent open redirects via protocol-relative URLs
+      // If req.url starts with //, treat it as /
+      let safeUrl = req.originalUrl || req.url;
+      if (safeUrl.startsWith('//')) {
+          safeUrl = safeUrl.replace(/^\/+/, '/');
+      }
+
+      res.redirect(301, 'https://memija-typography.herokuapp.com' + safeUrl);
     }
   }
 });
@@ -45,5 +53,5 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // Start server
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-  console.info(`Server is running on port ${port}`); // Changed to console.info
+  console.info(`Server is running on port ${port}`);
 });
