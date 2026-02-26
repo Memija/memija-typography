@@ -14,7 +14,7 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        "script-src": ["'self'", "'unsafe-inline'"],
+        "script-src": ["'self'"], // Removed 'unsafe-inline'
         "img-src": ["'self'", "data:", "https:"],
       },
     },
@@ -33,7 +33,8 @@ app.use((req, res, next) => {
     if (req.headers.host && req.headers.host.includes('localhost')) {
       next();
     } else {
-      res.redirect('https://' + req.headers.host + req.url);
+      // Use hardcoded domain to prevent Host Header Injection
+      res.redirect('https://memija-typography.herokuapp.com' + req.url);
     }
   }
 });
@@ -44,5 +45,5 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // Start server
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.info(`Server is running on port ${port}`); // Changed to console.info
 });
