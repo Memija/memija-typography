@@ -1,18 +1,17 @@
 import React from 'react';
 import './InputStyle.less';
 
-class Input extends React.Component {
-    handleChange(e) {
+const Input = ({ onChange }) => {
+    const handleChange = (e) => {
         let value = e.target.value;
-        this.props.onChange(value);
-    }
-    render() {
-        return (
-            <div className="input">
-                <textarea onChange={this.handleChange.bind(this)} placeholder="Start typing ..."></textarea>
-            </div>
-        );
-    }
-}
+        onChange(value);
+    };
+
+    return (
+        <div className="input">
+            <textarea onChange={handleChange} placeholder="Start typing ..."></textarea>
+        </div>
+    );
+};
 
 export default Input;
