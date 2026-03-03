@@ -37,7 +37,8 @@ app.use((req, res, next) => {
       // Use URL constructor for safe URL construction
       // This sanitizes the path and query parameters
       try {
-        const targetUrl = new URL(req.path, 'https://memija-typography.herokuapp.com');
+        const sanitizedPath = req.path.replace(/^[/\\]+/, '');
+        const targetUrl = new URL(sanitizedPath, 'https://memija.github.io/memija-typography/');
 
         if (req.query && Object.keys(req.query).length > 0) {
             // URLSearchParams handles encoding automatically
@@ -47,7 +48,7 @@ app.use((req, res, next) => {
         res.redirect(301, targetUrl.toString());
       } catch (error) {
         // Fallback for invalid URLs
-        res.redirect(301, 'https://memija-typography.herokuapp.com/');
+        res.redirect(301, 'https://memija.github.io/memija-typography/');
       }
     }
   }
