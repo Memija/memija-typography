@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 const Color = ({ onChange }) => {
@@ -27,6 +28,10 @@ const Color = ({ onChange }) => {
             </div>
         </div>
     );
+};
+
+Color.propTypes = {
+    onChange: PropTypes.func.isRequired
 };
 
 export default Color;

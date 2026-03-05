@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class WhiteSpace extends React.Component {
@@ -35,5 +36,9 @@ class WhiteSpace extends React.Component {
         );
     }
 }
+
+WhiteSpace.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default WhiteSpace;

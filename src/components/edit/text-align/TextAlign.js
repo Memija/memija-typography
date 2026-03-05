@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class TextAlign extends React.Component {
@@ -43,7 +44,7 @@ class TextAlign extends React.Component {
                     <label htmlFor="text-align">Text align</label>
                 </div>
                 <div className="btn-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div
+                    <button
                         className="btn btn-default"
                         data-placement="top"
                         data-toggle="tooltip"
@@ -51,8 +52,8 @@ class TextAlign extends React.Component {
                         title="Set CSS text-align property value to left."
                     >
                         <i className="fa fa-align-left fa-lg"></i>
-                    </div>
-                    <div
+                    </button>
+                    <button
                         className="btn btn-default"
                         data-placement="top"
                         data-toggle="tooltip"
@@ -60,8 +61,8 @@ class TextAlign extends React.Component {
                         title="Set CSS text-align property value to right."
                     >
                         <i className="fa fa-align-right fa-lg"></i>
-                    </div>
-                    <div
+                    </button>
+                    <button
                         className="btn btn-default"
                         data-placement="top"
                         data-toggle="tooltip"
@@ -69,8 +70,8 @@ class TextAlign extends React.Component {
                         title="Set CSS text-align property value to center."
                     >
                         <i className="fa fa-align-center fa-lg"></i>
-                    </div>
-                    <div
+                    </button>
+                    <button
                         className="btn btn-default"
                         data-placement="top"
                         data-toggle="tooltip"
@@ -78,11 +79,15 @@ class TextAlign extends React.Component {
                         title="Set CSS text-align property value to justify."
                     >
                         <i className="fa fa-align-justify fa-lg"></i>
-                    </div>
+                    </button>
                 </div>
             </div>
         );
     }
 }
+
+TextAlign.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default TextAlign;

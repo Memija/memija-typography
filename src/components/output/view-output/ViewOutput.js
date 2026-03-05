@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../OutputStyle.less';
 import './ViewOutputStyle.less';
 
@@ -26,5 +27,22 @@ class ViewOutput extends React.Component {
         );
     }
 }
+
+ViewOutput.propTypes = {
+    color: PropTypes.string.isRequired,
+    direction: PropTypes.string.isRequired,
+    fontSize: PropTypes.string.isRequired,
+    letterSpacing: PropTypes.string.isRequired,
+    lineHeight: PropTypes.string.isRequired,
+    textAlign: PropTypes.string.isRequired,
+    textDecoration: PropTypes.string.isRequired,
+    textIndent: PropTypes.string.isRequired,
+    textOverflow: PropTypes.string.isRequired,
+    textShadow: PropTypes.string.isRequired,
+    textTransform: PropTypes.string.isRequired,
+    whiteSpace: PropTypes.string.isRequired,
+    wordSpacing: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired
+};
 
 export default ViewOutput;

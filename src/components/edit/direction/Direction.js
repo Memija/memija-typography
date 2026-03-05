@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class Direction extends React.Component {
@@ -32,5 +33,9 @@ class Direction extends React.Component {
         );
     }
 }
+
+Direction.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default Direction;
