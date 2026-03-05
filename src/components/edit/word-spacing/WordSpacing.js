@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class WordSpacing extends React.Component {
@@ -29,5 +30,9 @@ class WordSpacing extends React.Component {
         );
     }
 }
+
+WordSpacing.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default WordSpacing;

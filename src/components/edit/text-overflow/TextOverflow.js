@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class TextOverflow extends React.Component {
@@ -33,5 +34,9 @@ class TextOverflow extends React.Component {
         );
     }
 }
+
+TextOverflow.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default TextOverflow;

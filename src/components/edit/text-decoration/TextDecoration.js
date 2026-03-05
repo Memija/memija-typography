@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class TextDecoration extends React.Component {
@@ -34,5 +35,9 @@ class TextDecoration extends React.Component {
         );
     }
 }
+
+TextDecoration.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default TextDecoration;

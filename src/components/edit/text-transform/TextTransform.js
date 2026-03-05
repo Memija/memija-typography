@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class TextTransform extends React.Component {
@@ -34,5 +35,9 @@ class TextTransform extends React.Component {
         );
     }
 }
+
+TextTransform.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default TextTransform;

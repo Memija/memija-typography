@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 import './TextShadowStyle.less';
 
@@ -92,5 +93,9 @@ class TextShadow extends React.Component {
         );
     }
 }
+
+TextShadow.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default TextShadow;

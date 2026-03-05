@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import fileDownload from 'js-file-download';
 import { Configuration } from '../../index';
 import '../OutputStyle.less';
@@ -17,7 +18,7 @@ class CSSOutput extends React.Component {
     saveToFile() {
         let fileNameAndType = Configuration.File.FileName + Configuration.File.FileType;
         let input = this.dataRef.current.textContent;
-        let formatedData = input.replace(/;/g, ';\r\n').replace('{', '{\r\n').replace('}', '}\r\n');
+        let formatedData = input.replaceAll(';', ';\r\n').replace('{', '{\r\n').replace('}', '}\r\n');
         fileDownload(formatedData, fileNameAndType);
     }
 
@@ -63,5 +64,21 @@ class CSSOutput extends React.Component {
         );
     }
 }
+
+CSSOutput.propTypes = {
+    color: PropTypes.string.isRequired,
+    direction: PropTypes.string.isRequired,
+    fontSize: PropTypes.string.isRequired,
+    letterSpacing: PropTypes.string.isRequired,
+    lineHeight: PropTypes.string.isRequired,
+    textAlign: PropTypes.string.isRequired,
+    textDecoration: PropTypes.string.isRequired,
+    textIndent: PropTypes.string.isRequired,
+    textOverflow: PropTypes.string.isRequired,
+    textShadow: PropTypes.string.isRequired,
+    textTransform: PropTypes.string.isRequired,
+    whiteSpace: PropTypes.string.isRequired,
+    wordSpacing: PropTypes.string.isRequired
+};
 
 export default CSSOutput;

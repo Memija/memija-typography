@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class LineHeight extends React.Component {
@@ -29,5 +30,9 @@ class LineHeight extends React.Component {
         );
     }
 }
+
+LineHeight.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default LineHeight;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class FontSize extends React.Component {
@@ -46,5 +47,9 @@ class FontSize extends React.Component {
         );
     }
 }
+
+FontSize.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default FontSize;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../EditStyle.less';
 
 class LetterSpacing extends React.Component {
@@ -35,5 +36,9 @@ class LetterSpacing extends React.Component {
         );
     }
 }
+
+LetterSpacing.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default LetterSpacing;
