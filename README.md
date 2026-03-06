@@ -1,6 +1,6 @@
 # Memija Typography
 
-Typography application built with React, Webpack, and Express.
+Typography application built with React and Webpack.
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Memija_memija-typography&metric=alert_status)](https://sonarcloud.io/dashboard?id=Memija_memija-typography)
 
@@ -45,18 +45,6 @@ npm run build
 
 The output will be in the `dist/` directory.
 
-## Running the Server
-
-To run the Express server (which serves the built application):
-
-```bash
-npm start
-```
-
-Note: Make sure you have run `npm run build` first.
-
 ## Deployment
 
-This application is configured for deployment on Heroku. It includes a `Procfile` and `server.js` for serving static assets and handling security headers.
-
-For GitHub Pages deployment, you can use the `gh-pages` package (not currently configured, as the project seems setup for Node.js server deployment).
+This application is deployed on GitHub Pages. You can use the `gh-pages` package to deploy the application, by using the output in the `dist/` directory.
