@@ -24,7 +24,7 @@ class WhiteSpace extends React.Component {
                     <label htmlFor="white-space">White Space</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue="normal" onChange={this.handleChange.bind(this)}>
+                    <select id="white-space" name="white-space" defaultValue="normal" onChange={this.handleChange.bind(this)}>
                         <option value="normal">Normal</option>
                         <option value="nowrap">No wrap</option>
                         <option value="pre">Pre</option>

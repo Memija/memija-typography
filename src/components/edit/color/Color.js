@@ -24,7 +24,7 @@ const Color = ({ onChange }) => {
                 <label htmlFor="color">Color</label>
             </div>
             <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <input onChange={handleChange} type="color" data-testid="color-input"/>
+                <input id="color" name="color" onChange={handleChange} type="color" data-testid="color-input"/>
             </div>
         </div>
     );

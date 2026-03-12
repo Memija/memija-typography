@@ -45,6 +45,8 @@ class TextAlign extends React.Component {
                 </div>
                 <div className="btn-group col-xs-6 col-sm-6 col-md-6 col-lg-6">
                     <button
+                        id="text-align"
+                        name="text-align"
                         className="btn btn-default"
                         data-placement="top"
                         data-toggle="tooltip"

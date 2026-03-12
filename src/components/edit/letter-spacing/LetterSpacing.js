@@ -25,6 +25,8 @@ class LetterSpacing extends React.Component {
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                     <input
+                        id="letter-spacing"
+                        name="letter-spacing"
                         defaultValue="0"
                         max="100"
                         min="-100"

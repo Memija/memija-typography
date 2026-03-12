@@ -24,7 +24,7 @@ class LineHeight extends React.Component {
                     <label htmlFor="line-height">Line height</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <input defaultValue="1" max="25" min="-25" type="number" onChange={this.handleChange.bind(this)} />
+                    <input id="line-height" name="line-height" defaultValue="1" max="25" min="-25" type="number" onChange={this.handleChange.bind(this)} />
                 </div>
             </div>
         );

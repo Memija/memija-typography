@@ -21,10 +21,10 @@ class FontSize extends React.Component {
                         <i className="fa fa-text-height fa-lg"></i>
                     </div>
                     &nbsp;
-                    <label htmlFor="color">Font size</label>
+                    <label htmlFor="font-size">Font size</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue="12px" onChange={this.handleChange.bind(this)}>
+                    <select id="font-size" name="font-size" defaultValue="12px" onChange={this.handleChange.bind(this)}>
                         <option value="8px">8</option>
                         <option value="9px">9</option>
                         <option value="10px">10</option>

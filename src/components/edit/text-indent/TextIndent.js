@@ -25,6 +25,8 @@ class TextIndent extends React.Component {
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                     <input
+                        id="text-indent"
+                        name="text-indent"
                         defaultValue="0"
                         max="1000"
                         min="-25"
