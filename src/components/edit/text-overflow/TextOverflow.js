@@ -24,7 +24,7 @@ class TextOverflow extends React.Component {
                     <label htmlFor="text-overflow">Text overflow</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue="initial" onChange={this.handleChange.bind(this)}>
+                    <select id="text-overflow" name="text-overflow" defaultValue="initial" onChange={this.handleChange.bind(this)}>
                         <option value="initial">Initial</option>
                         <option value="clip">Clip</option>
                         <option value="ellipsis">Ellipsis</option>

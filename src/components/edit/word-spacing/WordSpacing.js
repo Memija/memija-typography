@@ -24,7 +24,7 @@ class WordSpacing extends React.Component {
                     <label htmlFor="word-spacing">Word spacing</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <input defaultValue="0" max="100" min="-25" onChange={this.handleChange.bind(this)} type="number" />
+                    <input id="word-spacing" name="word-spacing" defaultValue="0" max="100" min="-25" onChange={this.handleChange.bind(this)} type="number" />
                 </div>
             </div>
         );

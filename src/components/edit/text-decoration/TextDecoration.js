@@ -24,7 +24,7 @@ class TextDecoration extends React.Component {
                     <label htmlFor="text-decoration">Text decoration</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue="none" onChange={this.handleChange.bind(this)}>
+                    <select id="text-decoration" name="text-decoration" defaultValue="none" onChange={this.handleChange.bind(this)}>
                         <option value="none">None</option>
                         <option value="underline">Underline</option>
                         <option value="overline">Overline</option>

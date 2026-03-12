@@ -40,13 +40,14 @@ class TextShadow extends React.Component {
                         <i className="fa fa-flash fa-lg"></i>
                     </div>
                     &nbsp;
-                    <label htmlFor="text-shadow">Text shadow</label>
+                    <label htmlFor="text-shadow-horizontal">Text shadow</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-shadow-input">
                     <input
                         data-toggle="tooltip"
                         defaultValue="0"
                         id="text-shadow-horizontal"
+                        name="text-shadow-horizontal"
                         max="100"
                         min="-25"
                         onChange={this.handleChange}

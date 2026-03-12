@@ -24,7 +24,7 @@ class Direction extends React.Component {
                     <label htmlFor="direction">Direction</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue="ltr" onChange={this.handleChange.bind(this)}>
+                    <select id="direction" name="direction" defaultValue="ltr" onChange={this.handleChange.bind(this)}>
                         <option value="ltr">Left to right</option>
                         <option value="rtl">Right to left</option>
                     </select>

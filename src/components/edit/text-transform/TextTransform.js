@@ -24,7 +24,7 @@ class TextTransform extends React.Component {
                     <label htmlFor="text-transform">Text transform</label>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <select defaultValue="none" onChange={this.handleChange.bind(this)}>
+                    <select id="text-transform" name="text-transform" defaultValue="none" onChange={this.handleChange.bind(this)}>
                         <option value="none">None</option>
                         <option value="capitalize">Capitalize</option>
                         <option value="lowercase">Lowercase</option>

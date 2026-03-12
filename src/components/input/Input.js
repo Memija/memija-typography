@@ -10,7 +10,7 @@ const Input = ({ onChange }) => {
 
     return (
         <div className="input">
-            <textarea onChange={handleChange} placeholder="Start typing ..."></textarea>
+            <textarea id="input-text" name="input-text" onChange={handleChange} placeholder="Start typing ..."></textarea>
         </div>
     );
 };
